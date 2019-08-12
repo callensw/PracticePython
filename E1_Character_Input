@@ -1,0 +1,14 @@
+# Character Input
+## Exercise 1
+Create a program that asks the user to enter their name and age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
+Extras:
+* Add on to the previous program by asking the user for another number and printing out that many copies of the previous message
+* Print out that many copies of the previous message on separate lines
+
+name = input("Please enter your name: ") # Retrieves the user's name
+age = int(input("Now enter your age: ")) # Retrieves the user's age
+iterations = input("Now provide another number: ") # Retrieves another number
+hundred_years = str(100 - age + 2019) # Calculates when the user will turn 100
+
+for i in range(0, int(iterations)):
+    print("Hello " + name + ", you will turn 100 years old in " + hundred_years)
