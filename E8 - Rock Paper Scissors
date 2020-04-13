@@ -1,0 +1,32 @@
+def RockPaperScissors():
+    u1 = input("Player 1: Rock, Paper or Scissors? ")
+    u2 = input("Player 2: Rock, Paper or Scissors? ")
+    if u1 == u2:
+        print("It's a tie!")
+    else:
+        if u1.lower() == "rock":
+            if u2.lower() == "paper":
+                return "Paper wins!"
+            elif u2.lower() == "scissors":
+                return "Rock wins!"
+            else:
+                return "Error"
+        elif u1.lower() == "paper":
+            if u2.lower() == "scissors":
+                return "Scissors win!"
+            elif u2.lower() == "rock":
+                return "Paper wins!"
+            else:
+                return "Error"
+        elif u1.lower() == "cissors":
+            if u2.lower() == "rock":
+                return "Rock wins!"
+            elif u2.lower() == "paper":
+                return "Scissors win!"
+            else:
+                return "Error"
+        else:
+            return "Error"
+ 
+print(RockPaperScissors())
+                
