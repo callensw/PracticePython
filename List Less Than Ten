@@ -1,0 +1,9 @@
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+b = [item for item in a if item < 5]
+print(b)
+
+num = int(input('Please provide a number: '))
+print("These numbers in the list 'a' are smaller than your number: ", end='')
+c = [item for item in a if item < num]
+print(b)
